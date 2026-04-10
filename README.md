@@ -58,7 +58,7 @@ This project is optimized for fast startup and excellent runtime performance:
 - **Lazy-loaded routes**: Faster initial page load
 - **Blog slug migration**: Automatic on first startup for existing blogs
 
-See [PERFORMANCE_IMPROVEMENTS.md](./PERFORMANCE_IMPROVEMENTS.md) for detailed metrics and optimizations.
+
 
 ---
 
@@ -202,7 +202,6 @@ vibeblog/
 ├── .env.example                # Environment variables template
 ├── .gitignore
 ├── package.json               # Root package with npm scripts
-├── PERFORMANCE_IMPROVEMENTS.md # Detailed performance metrics
 └── README.md
 ```
 
@@ -345,7 +344,7 @@ This project is optimized for fast startup and excellent runtime performance:
 - **Database queries**: Optimized with indexes for sub-100ms response times
 - **Lazy-loaded routes**: Faster initial page load
 
-See [PERFORMANCE_IMPROVEMENTS.md](./PERFORMANCE_IMPROVEMENTS.md) for detailed metrics and optimizations.
+
 
 ---
 
