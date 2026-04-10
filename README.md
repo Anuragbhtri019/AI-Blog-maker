@@ -1,9 +1,8 @@
-# VibeBlog
+# VibeBlog (AI BLOG )
 
 A production-ready MERN (MongoDB, Express, React, Node.js) blogging platform with AI-powered auto-generated content, featuring SEO-friendly URLs, user profile management, and a beautiful reading experience with complete user management.
 
 **Built with:** React 19 + Vite 8 • Express • Mongoose • JWT Auth • Node-Cron • Groq AI • Sharp Image Processing • URL Slugs
-
 ---
 
 ## 🌟 Features
@@ -57,8 +56,6 @@ This project is optimized for fast startup and excellent runtime performance:
 - **Database queries**: Optimized with indexes for sub-100ms response times
 - **Lazy-loaded routes**: Faster initial page load
 - **Blog slug migration**: Automatic on first startup for existing blogs
-
-
 
 ---
 
@@ -210,14 +207,12 @@ vibeblog/
 ## 🔌 API Endpoints
 
 ### Authentication
-
 - `POST /api/auth/register` - Register new user
 - `POST /api/auth/login` - Login user
 - `POST /api/auth/change-password` - Change user password (requires old password verification)
 - `POST /api/auth/profile-image` - Upload/update profile image
 
 ### Blogs (Public)
-
 - `GET /api/blogs` - Get all blogs (paginated + filterable by category)
 - `GET /api/blogs/trending` - Get trending auto-generated blogs
 - `GET /api/blogs/:slug_or_id` - Get single blog by slug or ID (backward compatible)
@@ -228,7 +223,6 @@ vibeblog/
 - `GET /api/blogs/user/me` - Get user's blogs
 - `PUT /api/blogs/:id` - Update blog
 - `DELETE /api/blogs/:id` - Delete blog
-
 ---
 
 ## 🎨 URL Slug System
@@ -262,7 +256,6 @@ The API intelligently searches:
 1. First by slug (user-friendly URL)
 2. Then by ObjectId (for old links and internal operations)
 3. Prevents errors from invalid data types
-
 ---
 
 ## 🤖 Auto-Blog Generation
@@ -343,8 +336,6 @@ This project is optimized for fast startup and excellent runtime performance:
 - **Auto-blog generation**: Runs in background, doesn't block startup
 - **Database queries**: Optimized with indexes for sub-100ms response times
 - **Lazy-loaded routes**: Faster initial page load
-
-
 
 ---
 
