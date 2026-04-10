@@ -1,0 +1,27 @@
+{
+  "name": "vibeblog",
+  "version": "1.0.0",
+  "description": "Production-ready MERN blog with auto-generated AI content",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:from-client": "cd client && npm run dev:full",
+    "dev:from-server": "cd server && npm run dev:full",
+    "build": "npm run build --workspace=client && npm run build --workspace=server --if-present",
+    "preview": "npm run preview --workspace=client"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "@vitejs/plugin-react-oxc": "^0.4.3",
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

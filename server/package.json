@@ -1,0 +1,53 @@
+{
+  "name": "vibeblog-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "VibeBlog backend with auto-generated content",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "dev:full": "concurrently \"npm run dev\" \"cd ../client && npm run dev\"",
+    "build": "echo \"Server build step not required\"",
+    "start": "node src/server.js",
+    "test": "npx --node-options='--experimental-vm-modules' jest",
+    "test:watch": "npx --node-options='--experimental-vm-modules' jest --watch",
+    "test:coverage": "npx --node-options='--experimental-vm-modules' jest --coverage",
+    "test:verbose": "npx --node-options='--experimental-vm-modules' jest --verbose",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.3.1",
+    "express-validator": "^7.3.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.2",
+    "openai": "^4.28.0",
+    "sharp": "^0.33.0",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@types/jest": "^30.0.0",
+    "babel-jest": "^30.3.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.1.0",
+    "jest": "^30.3.0",
+    "mongodb-memory-server": "^11.0.1",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.0",
+    "supertest": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
