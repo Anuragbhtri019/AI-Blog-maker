@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
-import reactOxC from '@vitejs/plugin-react-oxc';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [reactOxC()],
+  plugins: [react()],
   server: {
     port: 5173,
     strictPort: false,
@@ -15,7 +15,7 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: false,
     chunkSizeWarningLimit: 1000,
-    rolldownOptions: {
+    rollupOptions: {
       output: {
         // Improved code splitting for better caching
         manualChunks: id => {
